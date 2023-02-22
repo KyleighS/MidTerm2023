@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4536198121414486}
   - component: {fileID: 33106865834901278}
   - component: {fileID: 23505487763558228}
+  - component: {fileID: -6444913853307481547}
+  - component: {fileID: 4210624945759483306}
   m_Layer: 0
   m_Name: Turret Tower 03
   m_TagString: Untagged
@@ -84,6 +86,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-6444913853307481547
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582112111176492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2209225, y: 4.64913, z: 3.9235973}
+  m_Center: {x: 0.03464973, y: 2.2653522, z: 0.03234589}
+--- !u!114 &4210624945759483306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582112111176492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57427d07401a9944b8f539f42660fef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHP: 100
 --- !u!1 &1755999500637138
 GameObject:
   m_ObjectHideFlags: 0
