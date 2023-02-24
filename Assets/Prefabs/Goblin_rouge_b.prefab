@@ -2238,6 +2238,7 @@ GameObject:
   - component: {fileID: 9504128}
   - component: {fileID: 14341562}
   - component: {fileID: 11413532}
+  - component: {fileID: -1257470570372149135}
   m_Layer: 0
   m_Name: Goblin_rouge_b
   m_TagString: Untagged
@@ -2317,6 +2318,18 @@ MonoBehaviour:
   runSpeed: 1.7
   turnSpeed: 90
   gravity: 20
+--- !u!114 &-1257470570372149135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9d0586142755f479a7da00e1ae12f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &186020
 GameObject:
   m_ObjectHideFlags: 0
