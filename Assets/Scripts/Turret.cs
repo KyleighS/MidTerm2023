@@ -13,7 +13,7 @@ public class Turret : MonoBehaviour
     public string enemyTag = "Enemy";
 
     public Transform partRotate;
-    public float turnSpeed = 5f;
+    public float turnSpeed = 10f;
 
     [Header("Shooting")]
     
@@ -85,7 +85,13 @@ public class Turret : MonoBehaviour
     void Shoot()
     {
         //add partical effect
-        Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        GameObject bulletGO = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+        if(bullet != null)
+        {
+            bullet.Seek(target);
+        }
     }
 
     void OnDrawGizmosSelected()
