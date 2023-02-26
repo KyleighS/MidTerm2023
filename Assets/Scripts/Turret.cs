@@ -85,7 +85,7 @@ public class Turret : MonoBehaviour
     void Shoot()
     {
         //add partical effect
-        GameObject bulletGO = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
         if(bullet != null)

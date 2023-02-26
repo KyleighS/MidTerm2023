@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     private Transform target;
 
     public float speed = 7f;
-    public ParticleSystem bulletImpact;
+    public GameObject bulletImpact;
 
     public void Seek(Transform _target)
     {
@@ -37,7 +37,9 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
-        Instantiate(bulletImpact, transform.position, transform.rotation);
-        Destroy(gameObject);
+        GameObject impactEffect = (GameObject) Instantiate(bulletImpact, transform.position, transform.rotation);
+        Destroy(impactEffect, 2f);
+
+        Destroy(gameObject); 
     }
 }
