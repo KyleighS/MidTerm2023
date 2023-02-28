@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 6459295338615651929}
   - component: {fileID: 6459295338615651933}
   m_Layer: 0
-  m_Name: Turret Tower 03
+  m_Name: CannonTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
   enemyTag: Enemy
   partRotate: {fileID: 6459295337655713072}
   turnSpeed: 5
-  fireRate: 1
+  fireRate: 0.5
   bulletPrefab: {fileID: 3082556863879555978, guid: ff8c0f72e2e357144a6ce16ede0eb2eb, type: 3}
   bulletSpawn: {fileID: 7289600195133497252}
 --- !u!1 &7623243316401341217

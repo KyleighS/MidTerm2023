@@ -3177,7 +3177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3888,7 +3888,7 @@ GameObject:
   - component: {fileID: 1725527642}
   - component: {fileID: 1725527641}
   m_Layer: 5
-  m_Name: BasicTurret (1)
+  m_Name: CannonTurretButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3913,7 +3913,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 80}
+  m_SizeDelta: {x: 112.3523, y: 118.8507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725527641
 MonoBehaviour:
@@ -3978,7 +3978,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1725527643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 204644250}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: BuyCannonTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1725527643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3999,8 +4011,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e9a799fa98713e54582fcb7ea336399b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4079,6 +4091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basicTurretPrefab: {fileID: 6266980135522189419, guid: d1b98e823c06c8642bc2e5d4e9c19969, type: 3}
+  cannonTurretPrefab: {fileID: 6459295338615651928, guid: d1b1882db25d6fc4f8ff52b752db2e26, type: 3}
 --- !u!1001 &1740742921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5540,7 +5553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320907798136787760, guid: 22966a9995164be41a2ab0cbc5629c6e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 127.9535
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 4320907798136787760, guid: 22966a9995164be41a2ab0cbc5629c6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5734,7 +5747,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6459295338615651928, guid: d1b1882db25d6fc4f8ff52b752db2e26, type: 3}
       propertyPath: m_Name
-      value: Turret Tower 03
+      value: CannonTurret
       objectReference: {fileID: 0}
     - target: {fileID: 6459295338615651932, guid: d1b1882db25d6fc4f8ff52b752db2e26, type: 3}
       propertyPath: m_RootOrder

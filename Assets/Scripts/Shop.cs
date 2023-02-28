@@ -23,5 +23,12 @@ public class Shop : MonoBehaviour
         Debug.Log("Bsaic Turret Bought");
         buildManager.SetTurretBuild(buildManager.basicTurretPrefab);
 
+    }  
+    public void BuyCannonTurret()
+    {
+        //can copy script for other turrets
+        Debug.Log("Cannon Turret Bought");
+        buildManager.SetTurretBuild(buildManager.cannonTurretPrefab);
+
     }
 }
