@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    public TurretBluePrint basicTurret;
+    public TurretBluePrint missileLauncher;
+
     BuildManager buildManager;
     // Start is called before the first frame update
     void Start()
@@ -17,18 +20,18 @@ public class Shop : MonoBehaviour
         
     }
 
-    public void BuyBasicTurret()
+    public void SelectBasicTurret()
     {
         //can copy script for other turrets
         Debug.Log("Bsaic Turret Bought");
-        buildManager.SetTurretBuild(buildManager.basicTurretPrefab);
+        buildManager.SelectTurretBuild(basicTurret);
 
     }  
-    public void BuyCannonTurret()
+    public void SelectMissileLauncher()
     {
         //can copy script for other turrets
-        Debug.Log("Cannon Turret Bought");
-        buildManager.SetTurretBuild(buildManager.cannonTurretPrefab);
+        Debug.Log("Missile Bought");
+        buildManager.SelectTurretBuild(missileLauncher);
 
     }
 }
