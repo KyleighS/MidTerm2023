@@ -11,6 +11,6 @@ public class LivesUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        livesTxt.text = PlayerStats.lives + "Lives";
+        livesTxt.text = PlayerStats.lives + " Lives";
     }
 }

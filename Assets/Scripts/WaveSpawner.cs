@@ -32,6 +32,7 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
+        PlayerStats.rounds = PlayerStats.rounds + 1;
         Debug.Log("Spawning wave");
 
         for (int i = 0; i < waveNumber; i++)
@@ -40,8 +41,9 @@ public class WaveSpawner : MonoBehaviour
 
             yield return new WaitForSeconds(0.5f);
         }
-
+        
         waveNumber++;
+
     }
 
     void SpawnEnemy()

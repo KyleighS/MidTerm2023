@@ -148,6 +148,7 @@ MonoBehaviour:
   partRotate: {fileID: 6268024598166668649}
   turnSpeed: 5
   fireRate: 1
+  maxShots: 10
   bulletPrefab: {fileID: 3082556863879555978, guid: ff8c0f72e2e357144a6ce16ede0eb2eb, type: 3}
   bulletSpawn: {fileID: 6268024599662164101}
 --- !u!1 &6267173759066295951

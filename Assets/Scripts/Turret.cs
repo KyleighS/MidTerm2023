@@ -18,7 +18,9 @@ public class Turret : MonoBehaviour
     [Header("Shooting")]
     
     public float fireRate = 1f;
+    public int maxShots = 2;
     private float fireCountdown = 0f;
+    private int shotNum = 0;
 
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
@@ -87,10 +89,16 @@ public class Turret : MonoBehaviour
         //add partical effect
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
+        shotNum++;
 
         if(bullet != null)
         {
             bullet.Seek(target);
+        }
+
+        if(shotNum >= maxShots)
+        {
+            Destroy(this.gameObject);
         }
     }
 
