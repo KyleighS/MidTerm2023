@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     public float speed = 5f;
 
-    public int health = 5;
+    public float startHealth = 5;
+    private float health;
+    public Image healthBar;
 
     public int droppedMoney = 10;
 
@@ -15,9 +18,17 @@ public class Enemy : MonoBehaviour
     private Transform target;
     private int wayPointIndex = 0;
 
+    void Start()
+    {
+        target = Waypoints.wayPoints[0];
+        health = startHealth;
+    }
+
     public void Damage(int dmg)
     {
         health -= dmg;
+
+        healthBar.fillAmount = health / startHealth;
 
         if(health <= 0)
         {
@@ -33,12 +44,6 @@ public class Enemy : MonoBehaviour
         Destroy(effect, 5f);
 
         Destroy(gameObject);
-    }
-
-    void Start()
-    {
-        target = Waypoints.wayPoints[0];
-
     }
 
     void Update()
