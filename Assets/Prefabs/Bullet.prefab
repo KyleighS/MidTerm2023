@@ -97,6 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  dmg: 1
+  dmg: 2
   explosionRad: 0
   bulletImpact: {fileID: 2384744472805184118, guid: 9761887374f69dc43a13eba6700897ad, type: 3}

@@ -11,7 +11,7 @@ public class WaveSpawner : MonoBehaviour
 
     public TextMeshProUGUI WaveCountdownText;
     public float timeBetweenWaves = 5f;
-    private float countDown = 2f;
+    private float countDown = 5f;
 
     private int waveNumber  =1 ;
 
