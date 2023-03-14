@@ -19,9 +19,10 @@ public class Turret : MonoBehaviour
     
     public float fireRate = 1f;
     public int maxShots = 2;
+    public AudioSource shotSound;
     private float fireCountdown = 0f;
     private int shotNum = 0;
-
+    
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
 
@@ -89,6 +90,7 @@ public class Turret : MonoBehaviour
         //add partical effect
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
+        shotSound.Play();
         shotNum++;
 
         if(bullet != null)
