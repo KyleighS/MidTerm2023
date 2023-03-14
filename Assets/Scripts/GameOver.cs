@@ -6,12 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public TextMeshProUGUI roundsNUM;
-    
-    void OnEnable()
-    {
-        roundsNUM.text = PlayerStats.rounds.ToString();
-    }
+
     public void Retry()
     {
         SceneManager.LoadScene("Game");

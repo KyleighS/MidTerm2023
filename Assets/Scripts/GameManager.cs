@@ -6,10 +6,12 @@ public class GameManager : MonoBehaviour
 {
     public static bool gameEnded;
     public GameObject gameOverUI;
+    public GameObject victoryUI;
 
     void Start()
     {
         gameEnded = false;
+        
     }
 
     // Update is called once per frame
@@ -31,5 +33,11 @@ public class GameManager : MonoBehaviour
         gameEnded = true;
 
         gameOverUI.SetActive(true);
+    }
+
+    public void WinLevel()
+    {
+        gameEnded = true;
+        victoryUI.SetActive(true);
     }
 }

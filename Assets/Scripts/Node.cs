@@ -7,6 +7,7 @@ public class Node : MonoBehaviour
 {
     public Color hoverColor;
     public Color noMoneyColor;
+    public AudioSource cantPlace;
     public Vector3 yOffset;
 
     private Renderer rend;
@@ -67,6 +68,7 @@ public class Node : MonoBehaviour
         }
         else
         {
+            cantPlace.Play();
             rend.material.color = noMoneyColor;
         }
     }
