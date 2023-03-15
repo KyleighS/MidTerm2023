@@ -2346,7 +2346,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214404327}
         m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -7253,10 +7253,23 @@ MonoBehaviour:
     rate: 1
   - enemy: {fileID: 7231411893744014841, guid: 4d513971e7f30b54d881154ffdaa816d, type: 3}
     count: 4
-    rate: 1
+    rate: 2
+  - enemy: {fileID: 1231132912895077510, guid: 90ff2f1bc2557974f93f5b308882278d, type: 3}
+    count: 10
+    rate: 2
+  - enemy: {fileID: 7231411893744014841, guid: 4d513971e7f30b54d881154ffdaa816d, type: 3}
+    count: 6
+    rate: 2
+  - enemy: {fileID: 7231411893744014841, guid: 4d513971e7f30b54d881154ffdaa816d, type: 3}
+    count: 10
+    rate: 2
+  - enemy: {fileID: 1231132912895077510, guid: 90ff2f1bc2557974f93f5b308882278d, type: 3}
+    count: 12
+    rate: 4
   spawnPoint: {fileID: 2031684452}
   WaveCountdownText: {fileID: 52490191}
   timeBetweenWaves: 5
+  gameManager: {fileID: 1732313265}
 --- !u!4 &1732313262
 Transform:
   m_ObjectHideFlags: 0
@@ -7300,7 +7313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 30
-  startLives: 5
+  startLives: 15
 --- !u!114 &1732313265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8182,7 +8195,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214404327}
         m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
         m_MethodName: Retry
         m_Mode: 1
